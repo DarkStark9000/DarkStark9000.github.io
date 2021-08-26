@@ -12,7 +12,6 @@ body{
     background: #1D1F2A;
     color: #fff;
     margin: 8%;
-    margin-top: 4%;
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 0 50px #383059;
@@ -20,9 +19,12 @@ body{
 }
 
 .name{
-    font-size: 64px;
+    font-size: 42px;
     letter-spacing: 2px;
     font-weight: bold;
-    margin-top: 62px;
+    margin-top: 4%;
     text-align: center;
+}
+.meimg{ 
+    border-radius: 50%; 
 }
