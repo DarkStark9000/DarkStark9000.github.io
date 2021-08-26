@@ -5,22 +5,23 @@
     
 }
 body{
-    background: #150C3F;
+    background: #61549B;
 }
 
 .namecard{
-    background: white;
+    background: #1D1F2A;
+    color: #fff;
     margin: 8%;
     margin-top: 4%;
     padding: 20px;
     border-radius: 4px;
-    box-shadow: 0 0 50px #ccc;
+    box-shadow: 0 0 50px #383059;
     border: none;
 }
 
 .name{
-    font-size: 28px;
+    font-size: 64px;
     letter-spacing: 2px;
-    color: rgb(16, 16, 65);
-    
+    font-weight: bold;
+    margin-top: 62px;
 }
