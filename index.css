@@ -44,7 +44,8 @@ body{
     width: 100%;
     height: auto;
 }
-.circle { 
+.circle {
+    
     border-radius: 50%;
     background-color: deepskyblue;
     width: 200px;
