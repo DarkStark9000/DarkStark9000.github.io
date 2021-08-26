@@ -44,7 +44,7 @@ body{
     width: 100%;
     height: auto;
 }
-.circle {
+/* .circle {
     
     border-radius: 50%;
     background-color: deepskyblue;
@@ -53,7 +53,8 @@ body{
     position: absolute;
     opacity: 0;
     animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
-  }
+  } */
+  
   
 @keyframes scaleIn {
     from {
