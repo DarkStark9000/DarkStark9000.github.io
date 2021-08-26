@@ -5,3 +5,18 @@
     
 }
 
+.namecard{
+    margin: 8%;
+    margin-top: 4%;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 50px #ccc;
+    border: none;
+}
+
+.name{
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: rgb(16, 16, 65);
+    
+}
