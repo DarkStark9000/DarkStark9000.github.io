@@ -20,7 +20,7 @@ body{
 }
 
 .name{
-    font-size: 42px;
+    font-size: 52px;
     letter-spacing: 2px;
     font-weight: bold;
     margin-top: 4%;
@@ -54,7 +54,7 @@ body{
     opacity: 0;
     animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
   } */
-  
+
   
 @keyframes scaleIn {
     from {
