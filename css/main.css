@@ -29,7 +29,7 @@ canvas {
   align-items: center;
   padding: 20px;
 }
-.button {
+button {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
@@ -55,12 +55,12 @@ canvas {
   margin-top: 8vh;
 }
 
-.button.gh:hover{
+button.gh:hover{
   background-color: aliceblue; 
   border: 1.7px solid #bfffaf;
 }
 
-.button.twt:hover{
+button.twt:hover{
   background-color: #1DA1F2;
   border: 1.7px solid #bfffaf;
 } 
