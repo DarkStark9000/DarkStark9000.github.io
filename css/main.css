@@ -51,6 +51,8 @@ canvas {
   font-size: 2.2rem;
   letter-spacing: 1px;
   color: aliceblue;
+
+  margin-top: 20vh;
 }
 
 gh:hover{
