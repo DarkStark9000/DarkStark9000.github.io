@@ -17,6 +17,10 @@ header{
   color: aliceblue;
 }
 
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
 canvas {
   position: absolute;
   top:0;
@@ -39,8 +43,9 @@ canvas {
   margin-left:20px;
   margin-right:20px;
   letter-spacing: 1.2px;
-  border: 1px solid white;
+  border: 1.7px solid white;
   background: black;
   cursor: pointer;
+  border-radius: 4px;
 }
 
