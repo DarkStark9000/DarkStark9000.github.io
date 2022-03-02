@@ -66,3 +66,11 @@ button.twt:hover{
   color: #000000;
   border: 1.7px solid #bfffaf;
 } 
+
+.countdown{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
