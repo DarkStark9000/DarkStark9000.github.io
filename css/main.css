@@ -57,12 +57,12 @@ canvas {
 
 .button.gh:hover{
   background-color: aliceblue;
-  color: black;
+  color: #000000;
   border: 1.7px solid #bfffaf;
 }
 
 .button.twt:hover{
   background-color: #1DA1F2;
-  color: black;
+  color: #000000;
   border: 1.7px solid #bfffaf;
 } 
