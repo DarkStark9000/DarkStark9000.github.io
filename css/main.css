@@ -55,13 +55,13 @@ canvas {
   margin-top: 8vh;
 }
 
-.gh:hover{
+.button.gh:hover{
   color: black;
   background-color: aliceblue;
   border: 1.7px solid black;
 }
 
-.twt:hover{
+.button.twt:hover{
   color: black;
   background-color: #1DA1F2;
   border: 1.7px solid aliceblue;
