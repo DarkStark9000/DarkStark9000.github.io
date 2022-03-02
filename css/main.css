@@ -4,9 +4,7 @@ body {
   margin: 0;
   background: black;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 canvas {
   position: absolute;
@@ -41,4 +39,14 @@ canvas {
   border: 1px solid white;
   background: black;
   cursor: pointer;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: aliceblue;
 }
