@@ -15,77 +15,108 @@
 	<div class="cap">
 		<div class="heading">I am Debarshi Das and This garden is opening soon!</div>
 		<div class="button-wrapper">
-				<a href="https://twitter.com/intent/follow?screen_name=thedebarshidas"><button class="twt">Follow on Twitter</button></a>
-				<a href="https://github.com/DarkStark9000" aria-label="Follow @DarkStark9000 on GitHub"><button class="gh">Follow on Github</button></a> 
-				</div>
-			</div> 
-		
-		<script src="js/three.min.js"></script>
-		<script>
-			let scene, camera, renderer, stars, starGeo;
-			
-			function init() {
-				
-				scene = new THREE.Scene();
-				
-				camera = new THREE.PerspectiveCamera(60,window.innerWidth / window.innerHeight, 1, 1000);
-				camera.position.z = 1;
-				camera.rotation.x = Math.PI/2;
-				
-				renderer = new THREE.WebGLRenderer();
-				renderer.setSize(window.innerWidth, window.innerHeight);
-				document.body.appendChild(renderer.domElement);
-				
-				starGeo = new THREE.Geometry();
-				for(let i=0;i<6000;i++) {
-					star = new THREE.Vector3(
-					Math.random() * 600 - 300,
-					Math.random() * 600 - 300,
-					Math.random() * 600 - 300
-					);
-					star.velocity = 0;
-					star.acceleration = 0.02;
-					starGeo.vertices.push(star);
-				}
-				
-				let sprite = new THREE.TextureLoader().load( 'images/star.png' );
-				let starMaterial = new THREE.PointsMaterial({
-					color: 0xaaaaaa,
-					size: 0.7,
-					map: sprite
-				});
-				
-				stars = new THREE.Points(starGeo,starMaterial);
-				scene.add(stars);
-				
-				window.addEventListener("resize", onWindowResize, false);
-				
-				animate(); 
-			}
-			function onWindowResize() {
-				camera.aspect = window.innerWidth / window.innerHeight;
-				camera.updateProjectionMatrix();
-				renderer.setSize(window.innerWidth, window.innerHeight);
-			}
-			function animate() {
-				starGeo.vertices.forEach(p => {
-					p.velocity += p.acceleration
-					p.y -= p.velocity;
-					
-					if (p.y < -200) {
-						p.y = 200;
-						p.velocity = 0;
-					}
-				});
-				starGeo.verticesNeedUpdate = true;
-				stars.rotation.y +=0.002;
-				
-				renderer.render(scene, camera);
-				requestAnimationFrame(animate);
-			}
-			init();
-		</script>
-		<script src="js/app.js"></script>
-	</body>
-	</html>
+			<a href="https://twitter.com/intent/follow?screen_name=thedebarshidas"><button class="twt">Follow on Twitter</button></a>
+			<a href="https://github.com/DarkStark9000" aria-label="Follow @DarkStark9000 on GitHub"><button class="gh">Follow on Github</button></a> 
+		</div>
+		<div class="countdown">
+			<div class="day">
+				<h3 class="days">
+					Days
+				</h3>
+				<h3>Days</h3>
+			</div>
+			<div class="hour">
+				<h3 class="hours">
+					Hours
+				</h3>
+				<h3>
+					Hours
+				</h3>
+			</div>
+			<div class="min">
+				<h3 class="minutes">
+					Min
+				</h3>
+				<h3>
+					Minutes
+				</h3>
+			</div>
+			<div class="sec">
+				<h3 class="seconds">
+					Sec
+				</h3>
+				<h3>
+					Seconds
+				</h3>
+			</div>
+		</div>
+	</div> 
 	
+	<script src="js/three.min.js"></script>
+	<script>
+		let scene, camera, renderer, stars, starGeo;
+		
+		function init() {
+			
+			scene = new THREE.Scene();
+			
+			camera = new THREE.PerspectiveCamera(60,window.innerWidth / window.innerHeight, 1, 1000);
+			camera.position.z = 1;
+			camera.rotation.x = Math.PI/2;
+			
+			renderer = new THREE.WebGLRenderer();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+			
+			starGeo = new THREE.Geometry();
+			for(let i=0;i<6000;i++) {
+				star = new THREE.Vector3(
+				Math.random() * 600 - 300,
+				Math.random() * 600 - 300,
+				Math.random() * 600 - 300
+				);
+				star.velocity = 0;
+				star.acceleration = 0.02;
+				starGeo.vertices.push(star);
+			}
+			
+			let sprite = new THREE.TextureLoader().load( 'images/star.png' );
+			let starMaterial = new THREE.PointsMaterial({
+				color: 0xaaaaaa,
+				size: 0.7,
+				map: sprite
+			});
+			
+			stars = new THREE.Points(starGeo,starMaterial);
+			scene.add(stars);
+			
+			window.addEventListener("resize", onWindowResize, false);
+			
+			animate(); 
+		}
+		function onWindowResize() {
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+		}
+		function animate() {
+			starGeo.vertices.forEach(p => {
+				p.velocity += p.acceleration
+				p.y -= p.velocity;
+				
+				if (p.y < -200) {
+					p.y = 200;
+					p.velocity = 0;
+				}
+			});
+			starGeo.verticesNeedUpdate = true;
+			stars.rotation.y +=0.002;
+			
+			renderer.render(scene, camera);
+			requestAnimationFrame(animate);
+		}
+		init();
+	</script>
+	<script src="js/app.js"></script>
+</body>
+</html>
