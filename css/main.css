@@ -56,13 +56,13 @@ canvas {
 }
 
 .button.gh:hover{
-  color: black;
   background-color: aliceblue;
-  border: 1.7px solid black;
+  color: black;
+  border: 1.7px solid #bfffaf;
 }
 
 .button.twt:hover{
-  color: black;
   background-color: #1DA1F2;
-  border: 1.7px solid aliceblue;
+  color: black;
+  border: 1.7px solid #bfffaf;
 } 
