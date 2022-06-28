@@ -1,6 +1,6 @@
 const  countdown = () => {
 
-    const countDate = new Date("June 27, 2022 00:10:00 GMT+0530").getTime();
+    const countDate = new Date("June 29, 2022 00:23:00 GMT+0530").getTime();
     const now = new Date().getTime();
     const timeLeft = countDate - now;
     
